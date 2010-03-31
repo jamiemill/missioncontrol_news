@@ -17,7 +17,7 @@ class NewsArticlesController extends NewsAppController {
 		}
 		$this->set('data', $result);
 		
-		$this->pageTitle = $result['NewsArticle']['headline'];
+		$this->set('title_for_layout', $result['NewsArticle']['headline']);
 		
 		if(Configure::read('News.layout')) {
 			$this->layout = Configure::read('News.layout');
