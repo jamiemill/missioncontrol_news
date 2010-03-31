@@ -9,8 +9,8 @@ class NewsArticle extends NewsAppModel {
 
 	var $validate = array(
 		'headline' => array(
-            'rule' => array('notEmpty')
-     	)
+			'rule' => array('notEmpty')
+	 	)
 	);
 	
 	function archive() {
