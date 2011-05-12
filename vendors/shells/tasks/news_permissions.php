@@ -29,7 +29,7 @@ class NewsPermissionsTask extends Shell {
 	function execute() {	
 		
 
-		$this->allow(array('model'=>'Group','foreign_key'=>USER_GROUP_CONTRIBUTOR), 'controllers/NewsArticles');
+		$this->allow(array('model'=>'Group','foreign_key'=>USER_GROUP_CONTRIBUTOR), 'controllers/News/NewsArticles');
 		
 
 		
